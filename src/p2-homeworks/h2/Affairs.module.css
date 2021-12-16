@@ -1,3 +1,24 @@
-.someClass {
+.affairs_wrapper {
+    padding-top: 25px;
 
+}
+.affairs_wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding-left: 15px;
+
+}
+.affairs_wrapper li {
+    list-style: none;
+
+}
+.affairs_wrapper li:first-child {
+    width: 100px;
+}
+.affairs_wrapper button {
+    background-color: forestgreen;
+    width: 70px;
+    margin-left: 20px;
 }

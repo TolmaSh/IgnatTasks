@@ -1,5 +1,6 @@
 import React from 'react'
 import Affair from './Affair'
+import s from './Affairs.module.css'
 import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
@@ -23,7 +24,7 @@ function Affairs(props: AffairsPropsType) {
     const setLow = () => {props.setFilter('low')}
 
     return (
-        <div>
+        <div className={s.affairs_wrapper}>
 
             {mappedAffairs}
 
