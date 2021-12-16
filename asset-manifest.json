@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/IgnatTasks/static/css/main.ecaa783c.chunk.css",
-    "main.js": "/IgnatTasks/static/js/main.91283e9c.chunk.js",
-    "main.js.map": "/IgnatTasks/static/js/main.91283e9c.chunk.js.map",
+    "main.js": "/IgnatTasks/static/js/main.dc1ede0f.chunk.js",
+    "main.js.map": "/IgnatTasks/static/js/main.dc1ede0f.chunk.js.map",
     "runtime-main.js": "/IgnatTasks/static/js/runtime-main.72f032cc.js",
     "runtime-main.js.map": "/IgnatTasks/static/js/runtime-main.72f032cc.js.map",
-    "static/js/2.12caeb64.chunk.js": "/IgnatTasks/static/js/2.12caeb64.chunk.js",
-    "static/js/2.12caeb64.chunk.js.map": "/IgnatTasks/static/js/2.12caeb64.chunk.js.map",
+    "static/js/2.8c129aab.chunk.js": "/IgnatTasks/static/js/2.8c129aab.chunk.js",
+    "static/js/2.8c129aab.chunk.js.map": "/IgnatTasks/static/js/2.8c129aab.chunk.js.map",
     "index.html": "/IgnatTasks/index.html",
     "static/css/main.ecaa783c.chunk.css.map": "/IgnatTasks/static/css/main.ecaa783c.chunk.css.map",
-    "static/js/2.12caeb64.chunk.js.LICENSE.txt": "/IgnatTasks/static/js/2.12caeb64.chunk.js.LICENSE.txt"
+    "static/js/2.8c129aab.chunk.js.LICENSE.txt": "/IgnatTasks/static/js/2.8c129aab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.72f032cc.js",
-    "static/js/2.12caeb64.chunk.js",
+    "static/js/2.8c129aab.chunk.js",
     "static/css/main.ecaa783c.chunk.css",
-    "static/js/main.91283e9c.chunk.js"
+    "static/js/main.dc1ede0f.chunk.js"
   ]
 }
