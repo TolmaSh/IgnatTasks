@@ -1,5 +1,5 @@
 .affairs_wrapper {
-    padding-top: 25px;
+    padding-top: 5px;
 
 }
 .affairs_wrapper ul {
@@ -7,12 +7,12 @@
     justify-content: space-between;
     align-items: center;
     width: 400px;
-    padding-left: 15px;
-
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 15px;
 }
 .affairs_wrapper li {
     list-style: none;
-
 }
 .affairs_wrapper li:first-child {
     width: 100px;
