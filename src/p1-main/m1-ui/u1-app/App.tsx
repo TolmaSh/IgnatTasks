@@ -7,7 +7,7 @@ import HW3 from "../../../p2-homeworks/h3/HW3";
 function App() {
     return (
         <div className={s.App}>
-            <div className={s.header}><h1>React homeworks:</h1></div>
+            <div className={s.header}><h1>React Homeworks:</h1></div>
             <hr/>
             <HW1/>
             <hr/>
