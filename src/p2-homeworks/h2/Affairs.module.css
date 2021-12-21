@@ -22,3 +22,15 @@
     width: 70px;
     margin-left: 20px;
 }
+.taskName {
+    font-weight: bold;
+}
+.low {
+    color: forestgreen;
+}
+.middle {
+    color: darkorange;
+}
+.high {
+    color: #b50706;
+}
