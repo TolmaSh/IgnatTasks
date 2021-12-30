@@ -1,15 +1,8 @@
-.blue {
-    border-bottom: 5px solid blue;
-}
 
 .column {
     display: flex;
     flex-direction: column;
 
-}
-
-.testSpanError {
-    color: blue;
 }
 
 .btnGroup {
@@ -24,4 +17,7 @@
 }
 .btnGroup > button {
     margin-left: 20px;
+}
+.styledInput {
+    --omrs-color-interaction: blue;
 }

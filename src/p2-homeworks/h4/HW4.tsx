@@ -3,11 +3,15 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import AlternativeSuperInputText from "./common/c1-SuperInputText/AlternativeSuperInputText";
 
 
 function HW4() {
     const [text, setText] = useState<string>('')
-    const error = text ? '' : 'error'
+
+
+    const error = text ? '' : 'Error'
+
 
     const showAlert = () => {
         if (error) {
@@ -26,17 +30,26 @@ function HW4() {
             <h3>Homeworks 4</h3>
 
             <div className={s.column}>
-                <SuperInputText
-                    value={text}
-                    onChangeText={setText}
-                    onEnter={showAlert}
-                    error={error}
-                    // spanClassName={s.testSpanError}
-                />
+                <div className={s.btnGroup}>
+                    <h2>SuperInput</h2>
 
-                <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
-                />
+                    <SuperInputText
+                        value={text}
+                        onChangeText={setText}
+                        onEnter={showAlert}
+                        error={error}
+                        title={"Example Input"}
+                        addBtn={true}
+                        required={true}
+                        // spanClassName={s.testSpanError}
+                    />
+
+                    <SuperInputText
+                        className={s.styledInput} // проверьте, рабоет ли смешивание классов
+                        title={'Hello'}
+                        myHelpText={'Example Help Text'}
+                    />
+                </div>
 
                 {/*----------------------------------------------------*/}
                 <div className={s.btnGroup}>

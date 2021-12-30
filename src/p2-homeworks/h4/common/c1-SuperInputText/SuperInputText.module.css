@@ -1,12 +1,106 @@
-.superInput {
+
+
+:root {
+    --defaultTextColor: rgba(19, 19, 21, 0.6);
+    --defaultHoverColor: #17933d;
+    --defaultColor-minus-two: rgba(255, 255, 255, 0.72);
+    --errorColor: #b50706;
+    --defaultHoverBgColor: #121212;
+    --defaultBgColor: #ffffff;
 
 }
 
-.errorInput {
-    border: 3px solid lime;
-    background: red;
+.input_wrapper {
+    margin-bottom: 1.5rem;
+    position: relative;
+    width: 20.4375rem;
 }
 
-.error {
-    color: red;
+/* Input*/
+.input_underlined > button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+}
+.input_underlined > input {
+    border: none;
+    border-bottom: 0.125rem solid var(--defaultTextColor);
+    width: 100%;
+    height: 2rem;
+    font-size: 1.0625rem;
+    padding-left: 0.875rem;
+    line-height: 147.6%;
+    padding-top: 0.825rem;
+    padding-bottom: 0.5rem;
+}
+
+.input_underlined > input:focus {
+    outline: none;
+}
+
+.input_underlined > .input_label {
+    position: absolute;
+    top: 0.9375rem;
+    left: 0.875rem;
+    line-height: 147.6%;
+    color: var(--defaultTextColor);
+    transition: top .2s;
+}
+
+.input_underlined > button > svg {
+    position: absolute;
+    top: 0.9375rem;
+    right: 0.875rem;
+    fill: var(--defaultTextColor);
+}
+
+.input_underlined > .input_helper {
+    font-size: 0.9375rem;
+    color: var(--defaultTextColor);
+    letter-spacing: 0.0275rem;
+    margin: 0.125rem 0.875rem;
+}
+
+.input_underlined > input:hover{
+    background: var(--defaultColor-minus-two);
+    border-color: var(--defaultHoverBgColor);
+}
+
+.input_underlined > input:focus + .input_label,
+.input_underlined > input:valid + .input_label {
+    top: 0;
+    font-size: 0.9375rem;
+    margin-bottom: 32px;;
+}
+
+.input_underlined:not(.input_error) > input:focus + .input_label{
+    color: var(--defaultHoverColor);
+}
+
+.input_underlined:not(.input_error) > input:focus{
+    border-color: var(--defaultHoverColor);
+}
+
+.input_underlined:not(.input_error) > input:focus ~ button > svg{
+    fill: var(--defaultHoverColor);
+}
+
+/** DANGER **/
+
+.input_underlined.input_error > .input_label, .input_underlined.input_error > .input_helper{
+    color: var(--errorColor);
+}
+
+.input_error > button > svg {
+    fill: var(--errorColor);
+}
+
+.input_error > input {
+    border-color: var(--errorColor);
+}
+
+.input_underlined > input {
+    background: var(--defaultBgColor);
 }
