@@ -12,7 +12,7 @@
     padding: 15px 0 15px 15px;
 }
 .App > div > h3 {
-    color: #ffe354;
+    color: rgba(5, 0, 0, 0.51);
     text-transform: uppercase;
 }
 .header {

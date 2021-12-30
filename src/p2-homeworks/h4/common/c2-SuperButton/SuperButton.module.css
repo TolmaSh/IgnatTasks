@@ -1,7 +1,43 @@
 .default {
-
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #0096d7, #008bbd);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 70px;
+    outline: 0;
+    overflow: hidden;
+    pointer-events: auto;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    border: 0;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.default:hover{
+    background: #007bbd;
+}
+.default:disabled {
+    background: #5e5e5e;
+    cursor: inherit;
 }
 
-.red {
-    background: red;
+.remove {
+    outline: none;
+    background: #f80000;
+    padding: 5px 10px;
+    border: 1px solid rgba(131, 131, 131, 0.63);
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+.remove::before {
+    display: block;
+    content:'\2716';
 }

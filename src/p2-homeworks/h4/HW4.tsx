@@ -4,6 +4,7 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 
+
 function HW4() {
     const [text, setText] = useState<string>('')
     const error = text ? '' : 'error'
@@ -22,7 +23,7 @@ function HW4() {
     return (
         <div>
             <hr/>
-            homeworks 4
+            <h3>Homeworks 4</h3>
 
             <div className={s.column}>
                 <SuperInputText
@@ -38,21 +39,24 @@ function HW4() {
                 />
 
                 {/*----------------------------------------------------*/}
+                <div className={s.btnGroup}>
+                    <h2>SuperButtons</h2>
+                    <SuperButton>
+                        default
+                    </SuperButton>
 
-                <SuperButton>
-                    default
-                </SuperButton>
+                    <SuperButton
+                        remove // пропсу с булевым значением не обязательно указывать true
+                        onClick={showAlert}
+                        className={s.deleteBtn}
+                    >{/*// название кнопки попадёт в children*/}
+                    </SuperButton>
 
-                <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
-                    onClick={showAlert}
-                >
-                    delete {/*// название кнопки попадёт в children*/}
-                </SuperButton>
+                    <SuperButton disabled>
+                        disabled
+                    </SuperButton>
+                </div>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
 
                 {/*----------------------------------------------------*/}
 
