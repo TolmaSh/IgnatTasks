@@ -2,12 +2,14 @@ import React from 'react'
 import Affair from './Affair'
 import s from './Affairs.module.css'
 import {AffairType, FilterType} from './HW2'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    setFilter: (filter: FilterType)=>void
-    deleteAffairCallback: (_id: number)=>void
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: number) => void
 }
+
 
 function Affairs(props: AffairsPropsType) {
     const mappedAffairs = props.data.map((a: AffairType) => (
@@ -18,20 +20,50 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {props.setFilter('all')} // need to fix
-    const setHigh = () => {props.setFilter('high')}
-    const setMiddle = () => {props.setFilter('middle')}
-    const setLow = () => {props.setFilter('low')}
+    const setAll = () => {
+        props.setFilter('all')
+    } // need to fix
+    const setHigh = () => {
+        props.setFilter('high')
+    }
+    const setMiddle = () => {
+        props.setFilter('middle')
+    }
+    const setLow = () => {
+        props.setFilter('low')
+    }
 
     return (
         <div className={s.affairs_wrapper}>
 
             {mappedAffairs}
+            <div className={s.btnWrapper}>
+                <SuperButton
+                    onClick={setAll}
+                    className={s.allBtn}
+                >
+                    All
+                </SuperButton>
+                <SuperButton
+                    onClick={setHigh}
+                    className={s.highBtn}
+                >
+                    High
+                </SuperButton>
+                <SuperButton
+                    onClick={setMiddle}
+                    className={s.middleBtn}
+                >
+                    Middle
+                </SuperButton>
+                <SuperButton
+                    onClick={setLow}
+                    className={s.lowBtn}
+                >
+                    Low
+                </SuperButton>
+            </div>
 
-            <button onClick={setAll}>All</button>
-            <button onClick={setHigh}>High</button>
-            <button onClick={setMiddle}>Middle</button>
-            <button onClick={setLow}>Low</button>
         </div>
     )
 }

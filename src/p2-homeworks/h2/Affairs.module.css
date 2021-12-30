@@ -2,6 +2,7 @@
     padding-top: 5px;
 
 }
+
 .affairs_wrapper ul {
     display: flex;
     justify-content: space-between;
@@ -11,26 +12,66 @@
     border: 1px solid #333;
     border-radius: 15px;
 }
+
 .affairs_wrapper li {
     list-style: none;
 }
+
 .affairs_wrapper li:first-child {
     width: 100px;
 }
-.affairs_wrapper button {
-    background-color: forestgreen;
-    width: 70px;
-    margin-left: 20px;
-}
+
+
 .taskName {
     font-weight: bold;
 }
+
 .low {
-    color: forestgreen;
+    color: #54a654;
 }
+
 .middle {
-    color: darkorange;
+    color: #d77400;
 }
+
 .high {
     color: #b50706;
 }
+
+.btnWrapper {
+    display: flex;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.btnWrapper > .highBtn {
+    background-image: linear-gradient(-180deg, #d70019, #bd0016);
+}
+
+.btnWrapper > .highBtn:hover {
+    background: #bd0010;
+}
+
+.btnWrapper > .middleBtn {
+    background-image: linear-gradient(-180deg, #d76100, #bd5f00);
+
+}
+
+.btnWrapper > .middleBtn:hover {
+    background: #bd6500;
+}
+
+
+.btnWrapper > .lowBtn {
+    background-image: linear-gradient(-180deg, #00d744, #00bd09);
+}
+
+.btnWrapper > .lowBtn:hover {
+    background: #00bd10;
+}
+
+
+
+
+
+
