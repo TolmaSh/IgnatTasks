@@ -23,7 +23,8 @@ function HW4() {
 
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
-
+    const onClickHandlerTask = () => {
+    alert('I work My Boss') }
     return (
         <div>
             <hr/>
@@ -39,8 +40,9 @@ function HW4() {
                         onEnter={showAlert}
                         error={error}
                         title={"Example Input"}
-                        addBtn={true}
-                        required={true}
+                        addBtn
+                        onClickButton={onClickHandlerTask}
+                        required
                         // spanClassName={s.testSpanError}
                     />
 
