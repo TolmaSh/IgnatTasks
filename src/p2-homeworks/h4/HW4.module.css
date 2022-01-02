@@ -5,19 +5,22 @@
 
 }
 
-.btnGroup {
+.superGroup {
     border: 1px solid #333;
     border-radius: 10px;
     padding: 25px;
     margin-top: 15px;
     width: max-content;
 }
-.btnGroup > h2 {
+.superGroup > h2 {
     margin-top: 0;
 }
-.btnGroup > button {
+.superGroup > button {
     margin-left: 20px;
 }
 .styledInput {
     --omrs-color-interaction: blue;
+}
+.styledCheckbox {
+    display: flex;
 }

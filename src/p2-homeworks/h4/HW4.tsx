@@ -24,14 +24,15 @@ function HW4() {
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked)
     const onClickHandlerTask = () => {
-    alert('I work My Boss') }
+        alert('I work My Boss')
+    }
     return (
         <div>
             <hr/>
             <h3>Homeworks 4</h3>
 
             <div className={s.column}>
-                <div className={s.btnGroup}>
+                <div className={s.superGroup}>
                     <h2>SuperInput</h2>
 
                     <SuperInputText
@@ -54,7 +55,7 @@ function HW4() {
                 </div>
 
                 {/*----------------------------------------------------*/}
-                <div className={s.btnGroup}>
+                <div className={s.superGroup}>
                     <h2>SuperButtons</h2>
                     <SuperButton>
                         default
@@ -74,18 +75,20 @@ function HW4() {
 
 
                 {/*----------------------------------------------------*/}
+                <div className={s.superGroup}>
+                    <h2>Super Checkbox</h2>
+                    <SuperCheckbox
+                        checked={checked}
+                        onChangeChecked={setChecked}
+                    >
+                        some text {/*// этот текст попадёт в children*/}
+                    </SuperCheckbox>
 
-                <SuperCheckbox
-                    checked={checked}
-                    onChangeChecked={setChecked}
-                >
-                    some text {/*// этот текст попадёт в children*/}
-                </SuperCheckbox>
+                    {/*// onChange тоже должен работать*/}
+                    <SuperCheckbox checked={checked} onChange={testOnChange} className={s.styledCheckbox}/>
+                </div>
 
-                {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
