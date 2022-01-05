@@ -1,0 +1,8 @@
+.hwWrapper > div {
+    background-color: rgba(187, 187, 187, 0.67);
+    padding: 15px 0 15px 15px;
+}
+.hwWrapper > div > h3 {
+    color: rgba(5, 0, 0, 0.51);
+    text-transform: uppercase;
+}
