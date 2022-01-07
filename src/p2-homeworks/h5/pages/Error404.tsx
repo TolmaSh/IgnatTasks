@@ -13,7 +13,7 @@ import './Error.css'
 
 function Error404() {
     return (
-        <div id="container">
+        <div className='error_page'>
 <hr/>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px"
                  y="0px"

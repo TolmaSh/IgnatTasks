@@ -1,12 +1,9 @@
-*{
-    padding:0px;
-    margin:0px;
-}
+
 .st0{font-family:'FootlightMTLight';}
 .st1{font-size:83.0285px;}
 .st2{fill:gray;}
 
-svg{
+.error_page svg{
     width: 500px;
     height: 400px;
     text-align: center;
@@ -25,7 +22,7 @@ path#XMLID_11_ ,path#XMLID_2_ {
     fill: #16a085;
 }
 
-#container{
+.error_page{
     text-align:center;
     background-color: rgba(187, 187, 187, 0.67);
 }
