@@ -16,17 +16,18 @@ function HW6() {
     }
 
     return (
-        <div>
+        <div className={s.wrapper}>
             {/*<hr/>*/}
              <h3>homeworks 6</h3>
 
             {/*should work (должно работать)*/}
-            <div>
+            <div className={s.span_wrapper}>
                 <SuperEditableSpan
                     value={value}
                     onChangeText={setValue}
                     spanProps={{children: value ? undefined : 'enter text...'}}
                 />
+
             </div>
             <div className={s.buttons_wrapper}>
                 <SuperButton onClick={save}>save</SuperButton>

@@ -1,3 +1,24 @@
+.styledSpan {
+    cursor: pointer;
+    display: inline-block;
+    transition: all 1s;
+}
+.styledSpan:after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0%;
+    margin: auto;
+    border-bottom: 1px solid #5e5e5e;
+    transition: all 1s;
+}
+.styledSpan:hover:after {
+    width: 100%;
+
+}
+
+
+
 .styledSpanInput > input  {
     background: none;
     width: 50%;
@@ -11,6 +32,7 @@
     background: none;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 .edit_btn > img {
     width: 15px;
