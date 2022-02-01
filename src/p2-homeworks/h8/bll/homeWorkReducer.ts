@@ -1,21 +1,23 @@
-import {initialStateType} from "./tests/homeWorkReducer.test";
-import {log} from "util";
+
+import {UserType} from "../HW8";
 
 
-export const homeWorkReducer = (state: initialStateType[], action: generalType): any => { // need to fix any
+export const homeWorkReducer = (state: UserType[], action: generalType): UserType[] => { // need to fix any
     switch (action.type) {
         case 'sort': {
             if ( action.payload === 'up') {
-                state.sort((a, b) => a.name.localeCompare(b.name))
+                const newState = [...state]
+               return newState.sort((a, b) => a.name.localeCompare(b.name))
             }
             if ( action.payload === 'down') {
-                state.sort((a, b) => b.name.localeCompare(a.name))
+                const newState = [...state]
+                return newState.sort((a, b) => b.name.localeCompare(a.name))
             }
             return state
         }
         case 'check': {
-            // need to fix
-            return state
+            const newState = [...state]
+            return newState.filter( s => s.age >= 18)
         }
         default: return state
     }

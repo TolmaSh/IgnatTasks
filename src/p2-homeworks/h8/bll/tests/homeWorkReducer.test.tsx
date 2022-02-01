@@ -1,12 +1,9 @@
-import React from 'react'
-import {homeWorkReducer} from '../homeWorkReducer'
 
-export type initialStateType = {
-    _id: number
-    name: string
-    age: number
-}
-let initialState: initialStateType[] // need to fix any
+import {homeWorkReducer} from '../homeWorkReducer'
+import {UserType} from "../../HW8";
+
+
+let initialState: UserType[] // need to fix any
 
 beforeEach(() => {
     initialState = [
@@ -34,6 +31,6 @@ test('sort name down', () => {
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, {type: 'check', payload: 18})
-
-
+    expect(newState[0].name).toBe('Александр')
+    expect(newState[1].name).toBe('Виктор')
 })
