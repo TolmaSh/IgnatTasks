@@ -1,0 +1,42 @@
+
+.userList {
+    padding: 0;
+}
+
+.userInfo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.young {
+    color: darkgreen;
+}
+
+.old {
+    color: darkred;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    gap: 15px;
+}
+
+.sortDown {
+    background-image: linear-gradient(-180deg, #00d744, #00bd09);
+}
+
+.sortDown:hover {
+    background: #00bd10;
+}
+
+.checkAge {
+    background-image: linear-gradient(-180deg, #d70019, #bd0016);
+}
+
+.checkAge:hover {
+    background: #bd0010;
+}
